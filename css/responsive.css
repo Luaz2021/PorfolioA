@@ -1,0 +1,497 @@
+@media (max-width: 1200px ) {
+    header nav ul{
+        width: 70%;
+    }
+    .social-network{
+        width:50%;
+    }
+    .info-contain button{
+        width: 50%;
+    }
+    .svg-footer{
+        right: 18%;
+    }
+    .perfil{
+        margin-top: 10rem;
+    }
+    
+}
+
+@media (max-width: 1024px ) {
+    header nav ul{
+        width: 80%;
+    }
+    .info-contain h1{
+        font-size: 60px;
+    }
+    .info-contain h2{
+        font-size: 90px;
+    }
+    .card{
+        width: 200px;
+        height:300px;
+    }
+    .text-card p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #habilities h2{
+        padding-top:5rem;
+    }.perfil{
+        margin-top: 14rem;
+    }
+}
+
+@media (max-width: 950px ) {
+    header nav ul li a{
+        font-size:1rem;
+    }
+    #home{
+        height:50rem;
+    }
+    #about{
+        height:65rem;
+    }
+    .svg-contain{
+        height:50rem;
+    }
+    .svg-head{
+        width:25%;
+        height:100px;
+    }
+    .info-contain h1{
+        font-size: 50px;
+    }
+    .info-contain h2{
+        font-size: 80px;
+    }
+    .social-network{
+        width:60%;
+    }
+    .info-contain button{
+        width: 60%;
+    }
+    .card{
+        width: 180px;
+        height:280px;
+        margin: 3rem 2rem;
+    }
+    .text-card p{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #habilities{
+        height:65rem;
+    }
+    #habilities h2{
+        padding-top:8rem;
+    }
+}
+
+
+@media (max-width: 768px ) {
+    .nav-toggle{
+        display: block;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .nav-menu{
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            position: fixed;
+            top:80px;
+            width: 100%;
+        
+            height: calc(100% - 80px);
+            overflow-y: auto;
+        
+            left:100%;
+            transition: left 0.3s;
+            z-index: 10;
+        }
+    .nav-menu>li{
+        padding-left: 5rem;
+    }
+    .nav-menu>li>a{
+        font-size: 2.5rem;
+    }
+    .nav-menu_visible{
+        left:0;
+    }
+    /*Home*/
+    #home{
+        height:40rem;
+    }
+    .svg-contain{
+        height:40rem;
+    }
+    .svg-head{
+        height:80px;
+    }
+    .info-contain h1{
+        padding-top: 1rem;
+        font-size: 40px;
+    }
+    .info-contain h2{
+        font-size: 65px;
+    }
+    .social-network{
+        width:60%;
+        margin: 1rem 0;
+    }
+    .social-network svg{
+        width: 50px;
+        height: 50px;
+    }
+    .social-network svg:hover{
+        padding:1rem;
+    }
+    .info-contain button{
+        margin-top: 2rem;
+        width: 65%;
+        height:50px;
+    }
+    .info-contain button p{
+        font-size: 20px;
+        line-height: 4.5rem;
+    }
+    .info-contain button svg{
+        width:25px;
+        height:25px
+    }
+    .card{
+        width: 150px;
+        height:250px;
+        margin: 3rem 2rem;
+    }
+    .text-card p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .text-about{
+        width:100%;
+    }
+    .text-about p{
+        width: 95%;
+    }
+    .logo-about{
+        display: none;
+    }
+    .item img{
+        width:20%;
+        height:100px;
+    }
+    #habilities{
+        height:70rem;
+    }
+}
+@media (max-width: 650px ) {
+    /*Home*/
+    #home{
+        height:35rem;
+    }
+    .svg-contain{
+        height:35rem;
+    }
+    .svg-head{
+        height:75px;
+    }
+    .info-contain h1{
+        padding-top: 1rem;
+        font-size: 30px;
+    }
+    .info-contain h2{
+        font-size: 50px;
+    }
+    .social-network{
+        width:60%;
+        margin: 1rem 0;
+    }
+    .social-network svg{
+        width: 50px;
+        height: 50px;
+    }
+    .social-network svg:hover{
+        padding:1rem;
+    }
+    .info-contain button{
+        margin-top: 2rem;
+        width: 65%;
+        height:50px;
+    }
+    .info-contain button p{
+        font-size: 20px;
+        line-height: 4.5rem;
+    }
+    .info-contain button svg{
+        width:25px;
+        height:25px
+    }
+    .cards{
+        display: none;
+    }
+    .header-service span{
+        margin-left: 4rem;
+        display:block;
+    }
+    .header-service h2{
+        font-size: 2rem;
+    }
+    .header-service span button svg{
+       width: 20px;
+       height: 20px;
+    }
+    #contenedor{
+        display: block;
+    }
+    .text-about{
+        width:100%;
+    }
+    .text-about h2{
+        font-size: 25px;
+    }
+    .text-about p{
+        font-size: 18px;
+        text-align: justify;
+        width: 42ch;
+        padding-left: 10rem;
+    }
+    .logos{
+        display: flex;
+        width:100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-about{
+        display: none;
+    }
+    #about{
+        height: 92rem;
+    }
+    #habilities h2{
+        font-size: 25px;
+    }
+    #contacto h2{
+        font-size: 25px;
+    }
+    .cards-folio{
+        display: none;
+    }
+}
+@media (max-width: 550px ) {
+    /*Home*/
+    #home{
+        height:23rem;
+    }
+    .svg-contain{
+        height:23rem;
+    }
+    .svg-head{
+        height:50px;
+    }
+    .info-contain h1{
+        padding-top: 1rem;
+        font-size: 20px;
+    }
+    .info-contain h2{
+        font-size: 35px;
+    }
+    .social-network{
+        width:65%;
+        margin: 1rem 0;
+    }
+    .social-network svg{
+        width: 30px;
+        height: 30px;
+        padding:.5rem;
+    }
+    .social-network svg:hover{
+        padding:.2rem;
+    }
+    .info-contain button{
+        margin-top: 2rem;
+        width: 70%;
+        height:42px;
+    }
+    .info-contain button p{
+        font-size: 12px;
+        line-height: 4rem;
+    }
+    .info-contain button svg{
+        width:20px;
+        height:20px
+    }
+    .text-about{
+        width:100%;
+    }
+    .text-about h2{
+        font-size: 25px;
+    }
+    .text-about p{
+        font-size: 15px;
+        text-align: justify;
+        width: 90%;
+        padding-left: 5rem;
+        line-height: 2rem;
+    }
+    .logos{
+        display: flex;
+        width:100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img{
+        width: 100px;
+        height: 100px;
+    }
+    .logo-about{
+        display: none;
+    }
+
+    .item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .progress{
+        margin:2rem 0;
+        width: 100%;
+        height: 30px;
+    }
+    .item p{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .item img{
+        width:40%;
+        height:120px;
+    }
+    #habilities{
+        height:140rem;
+    }
+    #folio h2{
+        font-size: 25px;
+    }
+}
+@media (max-width:320px ) {
+    /*Home*/
+    #home{
+        height:20rem;
+    }
+    .svg-contain{
+        height:20rem;
+    }
+    .svg-head{
+        height:30px;
+    }
+    .info-contain h1{
+        padding-top: 1rem;
+        font-size: 15px;
+    }
+    .info-contain h2{
+        font-size: 25px;
+    }
+    .social-network{
+        width:80%;
+        margin: 1rem 0;
+    }
+    .social-network svg{
+        width: 30px;
+        height: 30px;
+        padding:.5rem;
+    }
+    .social-network svg:hover{
+        padding:.2rem;
+    }
+    .info-contain button{
+        margin-top: 2rem;
+        width: 80%;
+        height:35px;
+    }
+    .header-service span{
+        margin-left: 1rem;
+    }
+    .info-contain button p{
+        font-size: 10px;
+        line-height: 3.5rem;
+    }
+    .info-contain button svg{
+        width:15px;
+        height:15px
+    }
+    .text-about{
+        width:100%;
+    }
+    .text-about h2{
+        font-size: 25px;
+    }
+    .text-about p{
+        font-size: 10px;
+        width: 38ch;
+        padding-left: 4rem;
+    }
+    .logos{
+        display: flex;
+        width:100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logos img{
+        width: 80px;
+        height: 80px;
+    }
+    .logo-about{
+        display: none;
+    }
+    #about{
+        height: 65rem;
+    }
+    #habilities{
+        height:140rem;
+    }
+    .cards-contacto{
+        flex-direction: column;
+    }
+    .card-contacto{
+        margin-bottom: 4rem;
+    }
+    #contacto{
+        height: 85rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
