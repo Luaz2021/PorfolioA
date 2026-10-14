@@ -1,534 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/glider.min.css">
-    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Saúl Alexander (Luaz) — Portafolio Backend 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts (Inter) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Estilos CSS Propios -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
-    <title>Luaz Portafolio</title>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <button class="nav-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40"
-                    height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00334E" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                </svg>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Mis habilidades</a></li>
-                <li><a href="#">Mi portafolio</a></li>
-                <li><a href="#" id="contac">Contacto</a></li>
-            </ul>
+<body class="bg-[#fcfbf9] text-[#222222] antialiased selection:bg-neutral-200">
+
+    <!-- Navegación Superior -->
+    <header class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div
+                class="w-10 h-10 rounded-xl bg-blue-900 text-white flex items-center justify-center font-bold text-sm tracking-tight shadow-sm">
+                SM
+            </div>
+            <span class="font-bold text-lg tracking-tight text-neutral-900">[Luaz]</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm text-neutral-600 font-medium">
+            <a href="#experiencia" class="hover:text-black transition">Experiencia</a>
+            <a href="#proyectos" class="hover:text-black transition">Proyectos</a>
+            <a href="#habilidades" class="hover:text-black transition">Habilidades</a>
+            <a href="#formacion" class="hover:text-black transition">Formación</a>
         </nav>
+        <a href="#contacto"
+            class="px-5 py-2.5 rounded-full border border-neutral-300 text-sm font-medium text-neutral-900 hover:bg-neutral-100 transition">
+            Contacto
+        </a>
     </header>
-    <main>
-        <section id="home">
-            <div class="contain-home">
-                <div class="svg-contain">
-                    <div class="svg-head">
-                        <img src="src/svg/Group 84-1.svg" alt="">
-                    </div>
-                    <div class="svg-mid">
-                    </div>
-                    <div class="svg-footer">
-                        <img src="src/img/hombre.png" alt="">
-                    </div>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-28">
+
+        <!-- Sección Hero / Inicio -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100/70 text-xs font-semibold text-emerald-800 tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                    Disponible para nuevos proyectos
                 </div>
-                <div class="info-contain">
-                    <h1>Hola, soy Luaz</h1>
-                    <h2>UX/ UI <br>
-                        Designer
-                    </h2>
-                    <div class="social-network">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
-                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00334E" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <rect x="4" y="4" width="16" height="16" rx="2" />
-                            <line x1="8" y1="11" x2="8" y2="16" />
-                            <line x1="8" y1="8" x2="8" y2="8.01" />
-                            <line x1="12" y1="16" x2="12" y2="11" />
-                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00334E" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <rect x="4" y="4" width="16" height="16" rx="4" />
-                            <circle cx="12" cy="12" r="3" />
-                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
-                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00334E" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                        </svg>
-                    </div>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-device-mobile-message" width="40" height="40"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M11 3h10v8h-3l-4 2v-2h-3z" />
-                            <path d="M15 16v4a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h2" />
-                            <path d="M10 18v.01" />
-                        </svg>
-                        <p>Contáctame</p>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="service">
-            <div class="header-service">
-                <h2>servicios</h2>
-                <span>
-                    <button class="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-left" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="10" y1="12" x2="20" y2="12" />
-                            <line x1="10" y1="12" x2="14" y2="16" />
-                            <line x1="10" y1="12" x2="14" y2="8" />
-                            <line x1="4" y1="4" x2="4" y2="20" />
-                          </svg>
-                    </button>
-                    <button class="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="14" y1="12" x2="4" y2="12" />
-                            <line x1="14" y1="12" x2="10" y2="16" />
-                            <line x1="14" y1="12" x2="10" y2="8" />
-                            <line x1="20" y1="4" x2="20" y2="20" />
-                          </svg>
-                    </button>
-                </span>
-                
-                  
-            </div>
-            <!-- DESKTOP-->
-            <div class="cards">
-                <div class="card">
-                    <img src="src/img/ux.jpg" alt="">
-                    <div class="text-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-codepen" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M3 15l9 6l9 -6l-9 -6l-9 6" />
-                            <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
-                            <line x1="3" y1="9" x2="3" y2="15" />
-                            <line x1="21" y1="9" x2="21" y2="15" />
-                            <line x1="12" y1="3" x2="12" y2="9" />
-                            <line x1="12" y1="15" x2="12" y2="21" />
-                          </svg>
-                          <p>UX/UI Design
-
-                          </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="src/img/Marketing.jpg" alt="">
-                    <div class="text-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="3" y1="21" x2="21" y2="21" />
-                            <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
-                            <line x1="5" y1="21" x2="5" y2="10.85" />
-                            <line x1="19" y1="21" x2="19" y2="10.85" />
-                            <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                          </svg>
-                          <p>Marketing
-
-                          </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="src/img/Research.jpg" alt="">
-                    <div class="text-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="10" cy="10" r="7" />
-                            <line x1="21" y1="21" x2="15" y2="15" />
-                          </svg>
-                          <p>Research
-
-                          </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="src/img/Web Desing.jpg" alt="">
-                    <div class="text-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-bezier" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="3" y="14" width="4" height="4" rx="1" />
-                            <rect x="17" y="14" width="4" height="4" rx="1" />
-                            <rect x="10" y="6" width="4" height="4" rx="1" />
-                            <path d="M10 8.5a6 6 0 0 0 -5 5.5" />
-                            <path d="M14 8.5a6 6 0 0 1 5 5.5" />
-                            <line x1="10" y1="8" x2="4" y2="8" />
-                            <line x1="20" y1="8" x2="14" y2="8" />
-                            <circle cx="3" cy="8" r="1" />
-                            <circle cx="21" cy="8" r="1" />
-                          </svg>
-                          <p>Web Design
-
-                          </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="src/img/App Mobile.jpg" alt="">
-                    <div class="text-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="13" y="8" width="8" height="12" rx="1" />
-                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-                            <line x1="16" y1="9" x2="18" y2="9" />
-                          </svg>
-                          <p>App Mobile
-
-                          </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="src/img/Desing Desktop.jpg" alt="">
-                    <div class="text-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="3" y="4" width="18" height="12" rx="1" />
-                            <path d="M7 20h10" />
-                            <path d="M9 16v4" />
-                            <path d="M15 16v4" />
-                            <path d="M9 12v-4" />
-                            <path d="M12 12v-1" />
-                            <path d="M15 12v-2" />
-                            <path d="M12 12v-1" />
-                          </svg>
-                          <p>System App
-
-                          </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile-->
-            <div id="contenedor">
-                <div id="lista">
-                    <div class="contain-img-card">
-                        <div class="card">
-                            <img src="src/img/ux.jpg" alt="">
-                            <div class="text-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-codepen" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M3 15l9 6l9 -6l-9 -6l-9 6" />
-                                    <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
-                                    <line x1="3" y1="9" x2="3" y2="15" />
-                                    <line x1="21" y1="9" x2="21" y2="15" />
-                                    <line x1="12" y1="3" x2="12" y2="9" />
-                                    <line x1="12" y1="15" x2="12" y2="21" />
-                                  </svg>
-                                  <p>UX/UI Design
-        
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card">
-                            <img src="src/img/Marketing.jpg" alt="">
-                            <div class="text-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <line x1="3" y1="21" x2="21" y2="21" />
-                                    <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
-                                    <line x1="5" y1="21" x2="5" y2="10.85" />
-                                    <line x1="19" y1="21" x2="19" y2="10.85" />
-                                    <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                                  </svg>
-                                  <p>Marketing
-        
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card">
-                            <img src="src/img/Research.jpg" alt="">
-                            <div class="text-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="10" cy="10" r="7" />
-                                    <line x1="21" y1="21" x2="15" y2="15" />
-                                  </svg>
-                                  <p>Research
-        
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card">
-                            <img src="src/img/Web Desing.jpg" alt="">
-                            <div class="text-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vector-bezier" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <rect x="3" y="14" width="4" height="4" rx="1" />
-                                    <rect x="17" y="14" width="4" height="4" rx="1" />
-                                    <rect x="10" y="6" width="4" height="4" rx="1" />
-                                    <path d="M10 8.5a6 6 0 0 0 -5 5.5" />
-                                    <path d="M14 8.5a6 6 0 0 1 5 5.5" />
-                                    <line x1="10" y1="8" x2="4" y2="8" />
-                                    <line x1="20" y1="8" x2="14" y2="8" />
-                                    <circle cx="3" cy="8" r="1" />
-                                    <circle cx="21" cy="8" r="1" />
-                                  </svg>
-                                  <p>Web Design
-        
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card">
-                            <img src="src/img/App Mobile.jpg" alt="">
-                            <div class="text-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <rect x="13" y="8" width="8" height="12" rx="1" />
-                                    <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-                                    <line x1="16" y1="9" x2="18" y2="9" />
-                                  </svg>
-                                  <p>App Mobile
-        
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card">
-                            <img src="src/img/Desing Desktop.jpg" alt="">
-                            <div class="text-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#145374" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <rect x="3" y="4" width="18" height="12" rx="1" />
-                                    <path d="M7 20h10" />
-                                    <path d="M9 16v4" />
-                                    <path d="M15 16v4" />
-                                    <path d="M9 12v-4" />
-                                    <path d="M12 12v-1" />
-                                    <path d="M15 12v-2" />
-                                    <path d="M12 12v-1" />
-                                  </svg>
-                                  <p>System App
-        
-                                  </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div role="tablist" class="puntos"></div>
-
-            </div>
-
-        </section>
-
-        <section id="about"> 
-            <div class="text-about">
-                <h2>Sobre mí</h2>
-               <p>Bienvenidos a mi portafolio personal. Mi nombre es Martinez Rivas Saúl, soy Desarrollador de Software  y diseñador gráfico. Nací en Iquitos (Perú), resido actualmente en Lima.
-                    Egresado como tecnico en Desarrollo de software , me gusta lo creativo. He realizado varios cursos de diseño gráfico y diseño web pero mi formación es totalmente autodidacta. 
-                    Me considero una persona con una mente inquieta a la que le gusta aprender por sí mismo, cada proyecto es un nuevo reto para aprender y crecer profesionalmente.
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-neutral-900">
+                    Saúl Alexander <span class="italic font-normal text-blue-900">desarrollo con cuidado.</span>
+                </h1>
+                <p class="text-lg text-neutral-700 leading-relaxed max-w-2xl">
+                    Desarrollador full-stack con experiencia, centrado en <strong
+                        class="text-neutral-900">backend</strong>. Me importa el código claro, las pruebas y que lo que
+                    entrego se mantenga bien con el tiempo.
                 </p>
-                <div class="logos">
-                    <img src="src/icon/logo_academlo 5.png" alt="">  
-                    <img src="src/icon/udemy-logo.svg" alt="">
-                    <img src="src/icon/senati.svg" alt="">
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#proyectos"
+                        class="px-6 py-3 rounded-xl bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-800 transition flex items-center gap-2 shadow-sm">
+                        Ver proyectos <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="src/document/SAÚL ALEXANDER MARTÍNEZ RIVAS CV 2026.pdf" download
+                        class="px-6 py-3 rounded-xl border border-neutral-300 text-neutral-900 text-sm font-medium hover:bg-neutral-100 transition flex items-center gap-2">
+                        <i data-lucide="download" class="w-4 h-4"></i> Descargar CV
+                    </a>
                 </div>
-                    
-            </div>
-            <div class="logo-about">
-                <div class="perfil"></div>
-                <div class="figura"></div>
-                
-            </div>
-        </section>
-
-        <section id="habilities">
-            <h2>Mis habilidades</h2>
-            <div class="contain-habilities">
-                <div class="item">
-                    <div class="progress">
-                        <div class="contain-orange">60%</div>
-                    </div>
-                    <p class="text-item">HTML5</p>
-                    <img src="src/icon/html-5.png" alt="">
-                </div>
-                <div class="item">
-                    <div class="progress">
-                        <div class="contain-light-blue">80%</div>
-                    </div>
-                    <p class="text-item">CSS</p>
-                    <img src="src/icon/css-3.png" alt="">
-                </div>
-                <div class="item">
-                    <div class="progress">
-                        <div class="contain-yellow">40%</div>
-                    </div>
-                    <p class="text-item">JS</p>
-                    <img src="src/icon/js.png" alt="">
-                </div>
-                <div class="item">
-                    <div class="progress">
-                        <div class="contain-blue">60%</div>
-                    </div>
-                    <p class="text-item">C++</p>
-                    <img src="src/icon/c.png" alt="">
-                </div>
-                
-            </div>
-          
-            
-
-        </section>
-
-        <section id="folio" >
-            <h2 class="text-folio">Mi portafolio </h2>
-            <!-- DESKTOP-->
-            <div class="cards-folio">
-                <div class="card-folio">
-                    <img src="src/img/portafolio_3.png" alt="" class="img-folio">
-                    <p class="text-card-folio">Beauty app</p>
-                </div>
-                <div class="card-folio">
-                    <img src="src/img/portafolio.png" alt="" class="img-folio">
-                    <p class="text-card-folio">Training app</p>
-                </div>
-                <div class="card-folio">
-                    <img src="src/img/portafolio_4.png" alt="" class="img-folio">
-                    <p class="text-card-folio">Management</p>
-                </div>
-                <div class="card-folio">
-                    <img src="src/img/portafolio_2.png" alt="" class="img-folio">
-                    <p class="text-card-folio">Hotel app</p>
-                </div>
-                <div class="card-folio">
-                    <img src="src/img/portafolio_3.png" alt="" class="img-folio">
-                    <p class="text-card-folio">Beauty app</p>
-                </div>
-                <div class="card-folio">
-                    <img src="src/img/portafolio.png" alt="" class="img-folio">
-                    <p class="text-card-folio">Training app</p>
+                <!-- Redes sociales -->
+                <div class="flex items-center space-x-3 pt-4 text-neutral-600">
+                    <a href="https://github.com/Luaz2021" target="_blank" title="GitHub"
+                        class="p-3 rounded-full border border-neutral-200 hover:text-black hover:border-neutral-400 hover:bg-white transition flex items-center justify-center">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saulmartinez1998/" target="_blank" title="LinkedIn"
+                        class="p-3 rounded-full border border-neutral-200 hover:text-black hover:border-neutral-400 hover:bg-white transition flex items-center justify-center">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:deejayluaz@gmail.com" title="Correo"
+                        class="p-3 rounded-full border border-neutral-200 hover:text-black hover:border-neutral-400 hover:bg-white transition flex items-center justify-center">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.818l10 8.118 10-8.118v11.818h-20z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <!-- Mobile-->
-            <div id="contenedor">
-                <div id="lista-folio">
-                    <div class="contain-img-card">
-                        <div class="card-folio">
-                            <img src="src/img/portafolio_3.png" alt="" class="img-folio">
-                            <p class="text-card-folio">Beauty app</p>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card-folio">
-                            <img src="src/img/portafolio.png" alt="" class="img-folio">
-                            <p class="text-card-folio">Training app</p>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card-folio">
-                            <img src="src/img/portafolio_4.png" alt="" class="img-folio">
-                            <p class="text-card-folio">Management</p>
-                        </div>
-                    </div>
-                    <div class="contain-img-card">
-                        <div class="card-folio">
-                            <img src="src/img/portafolio_2.png" alt="" class="img-folio">
-                            <p class="text-card-folio">Hotel app</p>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="button-folio">
-                    <button aria-label="Anterior" class="prev-folio">&laquo;</button>
-                    <button aria-label="Siguiente" class="next-folio">&raquo;</button>
-                </div>
-               
-                <div role="tablist" class="puntos-folio"></div>
-
-            </div>
-       
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="cards-contacto">
-                <div class="card-contacto">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile-vibration" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#145476" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="4" y="4" width="10" height="16" rx="1" />
-                        <line x1="8" y1="5" x2="10" y2="5" />
-                        <line x1="9" y1="17" x2="9" y2="17.01" />
-                        <path d="M20 6l-2 3l2 3l-2 3l2 3" />
-                      </svg>
-                    <p class="tittle-card-contacto">Contacto</p>
-                    <p class="text-card-contacto">950459843</p>
-                </div>
-                <div class="card-contacto">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#145476" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <polyline points="3 7 12 13 21 7" />
-                      </svg>
-                    <p class="tittle-card-contacto">Email <br> </p>
-                    <p class="text-card-contacto">deejayluaz@gmail.com</p>
+            <!-- Avatar de Caricatura y Tarjeta Visual -->
+            <div class="md:col-span-5 relative">
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-orange-50/50 p-6 rounded-3xl border border-neutral-200/80 shadow-sm relative overflow-hidden flex flex-col items-center justify-center min-h-[320px]">
+                    <div
+                        class="absolute top-4 left-4 bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-neutral-200 text-xs font-medium text-neutral-700 shadow-xs flex items-center gap-1.5 z-10">
+                        <i data-lucide="code-2" class="w-3.5 h-3.5 text-blue-800"></i> Backend & Arquitectura
+                    </div>
+                    <div
+                        class="absolute bottom-4 right-4 bg-white/80 backdrop-blur px-3 py-1.5 rounded-lg border border-neutral-200 text-xs font-medium text-neutral-700 shadow-xs flex items-center gap-1.5 z-10">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-800"></i> Torrevieja, España
+                    </div>
+                    <div
+                        class="w-36 h-36 rounded-2xl bg-white/60 backdrop-blur border border-neutral-200/60 p-2 flex items-center justify-center shadow-inner overflow-hidden my-auto">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=LuazBackend2026" alt="Avatar programador"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs text-neutral-500 mt-4">[Saúl Alexander Martínez]</p>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #145476;"></path></svg></div>
-                <h3>Hecho con <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heartbeat" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#34B0BE" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M19.5 13.572l-7.5 7.428l-2.896 -2.868m-6.117 -8.104a5 5 0 0 1 9.013 -3.022a5 5 0 1 1 7.5 6.572" />
-                    <path d="M3 13h2l2 3l2 -6l1 3h3" />
-                  </svg>
-                </span> en Academlo</h3>
-        </footer>
+        <!-- Sección de Experiencia -->
+        <section id="experiencia" class="space-y-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-orange-100/60 text-xs font-bold text-orange-900 uppercase tracking-wider">
+                <i data-lucide="briefcase" class="w-4 h-4"></i> Experiencia
+            </div>
+
+            <div class="space-y-8 pl-4 border-l-2 border-neutral-200 ml-2">
+                <div class="relative pl-6">
+                    <span
+                        class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-900 ring-4 ring-[#fcfbf9]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h3 class="font-bold text-lg text-neutral-900">Desarrollador Full-Stack / Backend — Freelancer
+                        </h3>
+                        <span class="text-xs font-semibold text-neutral-500">[2024] – Presente</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mt-1">Desarrollo de sistemas a medida, lógica de negocio robusta,
+                        APIs estructuradas y optimización de bases de datos para proyectos independientes y soluciones
+                        digitales.</p>
+                </div>
+
+                <div class="relative pl-6">
+                    <span
+                        class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-neutral-400 ring-4 ring-[#fcfbf9]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h3 class="font-bold text-lg text-neutral-900">Responsable de Operaciones y Administración —
+                            Heladería Special</h3>
+                        <span class="text-xs font-semibold text-neutral-500">[2021] – [2023]</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mt-1">Promoción sucesiva hasta administración general. Control
+                        integral de procesos, mermas, abastecimiento y resolución de incidencias con alta capacidad
+                        analítica y orden operativo.</p>
+                </div>
+
+                <div class="relative pl-6">
+                    <span
+                        class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-neutral-400 ring-4 ring-[#fcfbf9]"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h3 class="font-bold text-lg text-neutral-900">Asesor de Soporte Técnico y Sistemas — J & M
+                            Resac</h3>
+                        <span class="text-xs font-semibold text-neutral-500">[2020] – [2021]</span>
+                    </div>
+                    <p class="text-sm text-neutral-600 mt-1">Diagnóstico, mantenimiento correctivo y preventivo de
+                        hardware y software, asegurando la disponibilidad operativa de equipos y sistemas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos (Clickeables con Alerta) -->
+        <section id="proyectos" class="space-y-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-blue-100/60 text-xs font-bold text-blue-900 uppercase tracking-wider">
+                <i data-lucide="layers" class="w-4 h-4"></i> Proyectos
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Proyecto 1: Autocheck -->
+                <a href="#"
+                    class="project-card bg-white p-6 rounded-2xl border border-neutral-200/80 shadow-xs flex flex-col justify-between hover:border-neutral-400 transition group block">
+                    <div class="space-y-4">
+                        <div
+                            class="h-40 rounded-xl bg-blue-50 border border-blue-100/60 flex items-center justify-center text-blue-800">
+                            <i data-lucide="car" class="w-12 h-12 stroke-[1.5]"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg text-neutral-900 group-hover:text-blue-900 transition">
+                                Autocheck</h3>
+                            <i data-lucide="arrow-up-right"
+                                class="w-5 h-5 text-neutral-400 group-hover:text-neutral-900 transition"></i>
+                        </div>
+                        <p class="text-sm text-neutral-600">App móvil enfocada en la gestión y control preventivo de
+                            coches, seguimiento de aceite, kilometraje y mantenimiento vehicular.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs text-neutral-600 pt-6">
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">Flutter</span>
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">Spring Boot</span>
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">PostgreSQL</span>
+                    </div>
+                </a>
+
+                <!-- Proyecto 2: Sistema de Préstamos -->
+                <a href="#"
+                    class="project-card bg-white p-6 rounded-2xl border border-neutral-200/80 shadow-xs flex flex-col justify-between hover:border-neutral-400 transition group block">
+                    <div class="space-y-4">
+                        <div
+                            class="h-40 rounded-xl bg-orange-50 border border-orange-100/60 flex items-center justify-center text-orange-800">
+                            <i data-lucide="box" class="w-12 h-12 stroke-[1.5]"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg text-neutral-900 group-hover:text-blue-900 transition">Sistema
+                                de Préstamos</h3>
+                            <i data-lucide="arrow-up-right"
+                                class="w-5 h-5 text-neutral-400 group-hover:text-neutral-900 transition"></i>
+                        </div>
+                        <p class="text-sm text-neutral-600">Control de inventario y registro de préstamos de artículos
+                            mediante Java puro, JDBC, servidor HTTP propio y MariaDB.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs text-neutral-600 pt-6">
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">Java Puro (JDBC)</span>
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">Servidor HTTP</span>
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">MariaDB</span>
+                    </div>
+                </a>
+
+                <!-- Proyecto 3: E-commerce -->
+                <a href="#"
+                    class="project-card bg-white p-6 rounded-2xl border border-neutral-200/80 shadow-xs flex flex-col justify-between hover:border-neutral-400 transition group block">
+                    <div class="space-y-4">
+                        <div
+                            class="h-40 rounded-xl bg-emerald-50 border border-emerald-100/60 flex items-center justify-center text-emerald-800">
+                            <i data-lucide="shopping-cart" class="w-12 h-12 stroke-[1.5]"></i>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg text-neutral-900 group-hover:text-blue-900 transition">
+                                E-commerce Base</h3>
+                            <i data-lucide="arrow-up-right"
+                                class="w-5 h-5 text-neutral-400 group-hover:text-neutral-900 transition"></i>
+                        </div>
+                        <p class="text-sm text-neutral-600">Plataforma de comercio electrónico con interfaz diseñada por
+                            IA y arquitectura backend robusta para catálogo y transacciones.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs text-neutral-600 pt-6">
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">Spring Boot</span>
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">MySQL</span>
+                        <span class="px-2.5 py-1 bg-neutral-100 rounded-md">Web IA</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="habilidades" class="space-y-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-100/60 text-xs font-bold text-emerald-900 uppercase tracking-wider">
+                <i data-lucide="terminal" class="w-4 h-4"></i> Habilidades
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100/80 space-y-3">
+                    <i data-lucide="code" class="w-6 h-6 text-blue-900"></i>
+                    <h3 class="font-bold text-neutral-900">Lenguajes</h3>
+                    <p class="text-sm text-neutral-600">Java, C# (.NET), SQL, JavaScript.</p>
+                </div>
+                <div class="bg-orange-50/50 p-6 rounded-2xl border border-orange-100/80 space-y-3">
+                    <i data-lucide="layout" class="w-6 h-6 text-orange-900"></i>
+                    <h3 class="font-bold text-neutral-900">Frontend & Web</h3>
+                    <p class="text-sm text-neutral-600">HTML5, CSS3, Tailwind CSS.</p>
+                </div>
+                <div class="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100/80 space-y-3">
+                    <i data-lucide="database" class="w-6 h-6 text-emerald-900"></i>
+                    <h3 class="font-bold text-neutral-900">Backend & Datos</h3>
+                    <p class="text-sm text-neutral-600">Spring Boot, PostgreSQL, MySQL, MariaDB, SQLite, JDBC.</p>
+                </div>
+                <div class="bg-purple-50/50 p-6 rounded-2xl border border-purple-100/80 space-y-3">
+                    <i data-lucide="cpu" class="w-6 h-6 text-purple-900"></i>
+                    <h3 class="font-bold text-neutral-900">Herramientas</h3>
+                    <p class="text-sm text-neutral-600">Git/GitHub, VS Code, Android Studio, Excel Avanzado (VBA).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Formación -->
+        <section id="formacion" class="space-y-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-purple-100/60 text-xs font-bold text-purple-900 uppercase tracking-wider">
+                <i data-lucide="graduation-cap" class="w-4 h-4"></i> Formación
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-neutral-200/80 flex items-start gap-4">
+                    <div class="p-3 bg-blue-50 text-blue-900 rounded-xl"><i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-neutral-900">Ciclo Superior DAM (En curso)</h3>
+                        <p class="text-sm text-neutral-500">Universidad Europea de Madrid</p>
+                        <p class="text-xs text-neutral-600 mt-2">Enfoque en backend con Java, desarrollo móvil y pruebas
+                            unitarias.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-neutral-200/80 flex items-start gap-4">
+                    <div class="p-3 bg-blue-50 text-blue-900 rounded-xl"><i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-neutral-900">Técnico en Desarrollo de Software</h3>
+                        <p class="text-sm text-neutral-500">SENATI — Lima, Perú (2016 - 2021)</p>
+                        <p class="text-xs text-neutral-600 mt-2">Formación integral en programación orientada a objetos
+                            y bases de datos relacionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="bg-blue-50/60 border border-blue-100 p-8 md:p-12 rounded-3xl space-y-6">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white text-xs font-bold text-blue-900 shadow-xs">
+                <i data-lucide="mail" class="w-4 h-4"></i> Contacto directo
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-900">
+                ¿Hablamos de tu <span class="italic font-normal text-blue-900">próximo proyecto</span>?
+            </h2>
+            <p class="text-neutral-600 max-w-xl">
+                Cuéntame qué necesitas. Respondo en menos de 24h para valorar propuestas de desarrollo o prácticas.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a href="mailto:deejayluaz@gmail.com"
+                    class="px-6 py-3.5 rounded-xl bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-800 transition flex items-center gap-2 shadow-sm">
+                    deejayluaz@gmail.com <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+                <a href="https://github.com/Luaz2021" target="_blank"
+                    class="px-6 py-3.5 rounded-xl bg-white border border-neutral-200 text-neutral-900 text-sm font-medium hover:bg-neutral-50 transition shadow-xs flex items-center gap-2">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/saulmartinez1998/" target="_blank"
+                    class="px-6 py-3.5 rounded-xl bg-white border border-neutral-200 text-neutral-900 text-sm font-medium hover:bg-neutral-50 transition shadow-xs flex items-center gap-2">
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
+    <footer
+        class="max-w-5xl mx-auto px-6 py-12 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between text-sm text-neutral-500 gap-4">
+        <p>&copy; 2026 Saúl Alexander Martínez (Luaz)</p>
+        <button id="btnTop" class="hover:text-black transition flex items-center gap-1 font-medium">
+            Volver arriba <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </button>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="js/glider.min.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/slider.js"></script>
+    <!-- Scripts -->
+    <script>lucide.createIcons();</script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
