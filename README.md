@@ -1,11 +1,18 @@
 # 💼 Portafolio Personal & CV Web 2026
 
+[![Demo en Vivo](https://img.shields.io/badge/Demo%20en%20Vivo-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://luaz2021.github.io/PorfolioA/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 ¡Hola! Soy **Saúl Alexander Martínez (Luaz)**, estudiante de DAM en la Universidad Europea y Técnico en Desarrollo de Software por SENATI. Este repositorio contiene el código fuente de mi portafolio web personal interactivo, enfocado en mi perfil técnico como desarrollador **Backend & Multiplataforma**.
+
+---
+
+## 🌐 Demo en Vivo
+Puedes explorar el portafolio web directamente en tu navegador:  
+👉 **[luaz2021.github.io/PorfolioA](https://luaz2021.github.io/PorfolioA/)**
 
 ---
 
